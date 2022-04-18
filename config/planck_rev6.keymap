@@ -25,29 +25,29 @@
 // | LSHFT |      |C_PREV|C_BRI_DN|C_VOL_DN|      |  HOME | PG_DN | PG_UP|  END |       | RET   |
 // | LCTL  |      | C_PP |        |C_MUTE  |    BACKSPACE | ADJUST|      |      |       | RSHFT |
 			bindings = <
-	&kp TILDE 	&kp EXCL 	&kp AT 		&kp HASH 		&kp DLLR 		&kp PRCNT	&kp CARET &kp AMPS  	&kp ASTRK &kp LPAR 	&kp RPAR     	&kp BSLH
-	&trans		&trans   	&kp C_NEXT	&kp C_BRI_UP	&kp C_VOL_UP    &kp G     	&kp LEFT  &kp DOWN  	&kp UP    &kp RIGHT	&trans       	&trans
-	&kp LSHFT 	&trans 	   	&kp C_PREV 	&kp C_BRI_DN	&kp C_VOL_DN    &kp B     	&kp HOME  &kp PG_DN 	&kp PG_UP &kp END   &trans		    &kp RET
-	&kp LCTRL  	&trans		&kp C_PP	&trans			&kp C_MUTE 		&trans    	&kp BSPC  &mo ADJUST	&trans	  &trans   	&trans	    	&kp RIGHT
+	&kp TILDE 	&kp EXCL 	&kp AT 		  &kp HASH 		  &kp DLLR 		  &kp PRCNT	&kp CARET &kp AMPS  	&kp ASTRK &kp LPAR 	&kp RPAR  &kp BSLH
+	&trans	  	&trans   	&kp C_NEXT	&kp C_BRI_UP	&kp C_VOL_UP  &kp G     &kp LEFT  &kp DOWN  	&kp UP    &kp RIGHT	&trans    &trans
+	&kp LSHFT 	&trans 	  &kp C_PREV 	&kp C_BRI_DN	&kp C_VOL_DN  &kp B     &kp HOME  &kp PG_DN 	&kp PG_UP &kp END   &trans		&kp RET
+	&kp LCTRL  	&trans		&kp C_PP	  &trans			  &kp C_MUTE 		&trans    &kp BSPC  &mo ADJUST	&trans	  &trans   	&trans	  &kp RIGHT
 			>;
 		};
 		raise_layer {
 // -----------------------------------------------------------------------------------------
 // |       |      |      |        |        |      |   /   |   N7  |  N8  |  N9  |   -   |       |
-// |<LAYER>|      |		 |        |        |      |   *   |   N4  |  N5  |  N6  |   +   |       |
+// |<LAYER>|      |	  	 |        |        |      |   *   |   N4  |  N5  |  N6  |   +   |       |
 // | LSHFT |      |      |        |        |      |  N0   |   N1  |  N2  |  N3  |   ^   |   =   |
 // |       |      |      |        |        |     DELETE   | ADJUST|  N0  |  .   |       |  RET  |
 			bindings = <
-	&trans	 	&trans	 	&trans 		&trans 			&trans 		&trans		&kp FSLH 	&kp N7  	&kp N8 		&kp N9	 		&kp MINUS   &kp BSLH
-	&trans		&trans   	&trans		&trans			&trans		&trans    	&kp ASTRK  	&kp N4  	&kp N5  	&kp N6			&kp PLUS    &trans
-	&trans	 	&trans 	   	&trans	 	&trans			&trans 		&trans    	&kp N0	 	&kp N1	 	&kp N2		&kp N3			&kp CARET	&kp RET
-	&trans 		&trans		&trans		&trans			&trans 		&trans    	&kp DEL		&trans		&kp N0		&kp DOT		  	&trans		&kp EQUAL
+	&trans	 	&trans	 	&trans 		&trans 			&trans 		&trans		  &kp FSLH 	&kp N7  	&kp N8 		&kp N9	 	&kp MINUS &kp BSLH
+	&trans		&trans   	&trans		&trans			&trans		&trans    	&kp ASTRK &kp N4  	&kp N5  	&kp N6		&kp PLUS  &trans
+	&trans	 	&trans 	  &trans	 	&trans			&trans 		&trans    	&kp N0	 	&kp N1	 	&kp N2		&kp N3		&kp CARET	&kp RET
+	&trans 		&trans		&trans		&trans			&trans 		&trans    	&kp DEL		&trans		&kp N0		&kp DOT		&trans		&kp EQUAL
 			>;
 		};
 		adjust_layer {
 // -----------------------------------------------------------------------------------------
 // |   F1  |  F2  |  F3  |   F4   |   F5   |  F6  |   F7  |   F8  |  F9  |  F10 |  F11  |  F12  |
-// |       |      |		 |        |        |      |       |       |      |      |       |       |
+// |       |      |		   |        |        |      |       |       |      |      |       |       |
 // |       |      |      |        |        |      |       |       |      |      |       |       |
 // |       |      |      |        |        |              |       |      |      |       |       |
 			bindings = <
