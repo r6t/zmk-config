@@ -56,13 +56,13 @@ As such, those are in use within the default layer at this time.*/
               };
               raise_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
- // | BT SEL0 | BT SEL1 | BT SEL2 | BT SEL3 | BT SEL4 |        |                                    |       |       |       |       |       |       |
+ // | BT SEL0 | BT SEL1 | BT SEL2 | BT SEL3 | BT SEL4 |        |                                    |       |       |       |       |       |  DEL  |
  // |         |         |         |         |         |        |                                    |  DIV  |   7   |   8   |   9   |   -   |       |
  // | ADJUST  |         |         |         |         | BT NXT |                                    |   *   |   4   |   5   |   6   |   +   |       |
  // |         |         |         |         |         | BT PRV |       |                    |       |   0   |   1   |   2   |   3   |   ^   |   =   |
  // |         |         |         |         |         | BT CLR |       |                    |       |       |  ---  |   0   |   .   |       |       |
                      bindings = <
-       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans                          &trans    &trans  &trans &trans  &trans    &trans
+       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans                          &trans    &trans  &trans &trans  &trans    &kp DEL
        &trans       &trans       &trans       &trans       &trans        &bt BT_NXT                      &kp SLASH &kp N7  &kp N8 &kp N9  &kp MINUS &trans
        &mo ADJUST   &trans       &trans       &trans       &trans        &bt BT_PRV                      &kp ASTRK &kp N4  &kp N5 &kp N6  &kp PLUS  &trans
        &trans       &trans       &trans       &trans       &trans        &bt BT_CLR &trans        &trans &kp N0    &kp N1  &kp N2 &kp N3  &kp CARET &kp EQUAL
@@ -75,13 +75,13 @@ As such, those are in use within the default layer at this time.*/
  // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
  // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
  // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
- // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
+ // |          |TO-DEFAULT|          |          |          |          |          |                    |          |          |          |          |          |          |          |
                      bindings = <
        &kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                             &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR        &ext_power EP_TOG
        &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_TOG 
        &bt BT_NXT &out OUT_TOG &out OUT_USB &out OUT_BLE &trans       &trans                                &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_SPD &rgb_ug RGB_BRD &trans
        &bt BT_PRV &trans       &trans       &trans       &trans       &trans       &kp LBRC        &kp RBRC &trans          &trans          &trans          &trans          &trans          &trans
-       &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
+       &trans     &to DEFAULT  &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
                      >;
               };
        };
