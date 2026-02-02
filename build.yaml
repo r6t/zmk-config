@@ -23,5 +23,6 @@ include:
     shield: helix_left
   - board: nice_nano
     shield: helix_right
+  - board: preonic
   - board: nice_nano
     shield: settings_reset
