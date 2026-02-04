@@ -6,8 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
 
 #define DEFAULT 0
 #define LOWER   1
@@ -48,24 +46,24 @@
 // |        |        | PREV   | BRT-   | VOL-   |        | HOME   | PG_DN  | PG_UP  | END    |        |        |
 // |        |        | PLAY   |        | MUTE   | BSPC   | BSPC   | RAISE  |        |        |        |        |
                      bindings = <
-       &kp TILDE    &kp EXCL    &kp AT     &kp HASH     &kp DLLR     &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &trans
-       &trans       &trans      &kp C_NEXT &kp C_BRI_UP &kp C_VOL_UP &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans   &trans
-       &trans       &trans      &kp C_PREV &kp C_BRI_DN &kp C_VOL_DN &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans   &trans
-       &trans       &trans      &kp C_PP   &trans       &kp C_MUTE   &kp BSPC  &kp BSPC  &mo RAISE &trans    &trans    &trans   &trans
+       &kp TILDE &kp EXCL &kp AT     &kp HASH     &kp DLLR     &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR &trans
+       &trans    &trans   &kp C_NEXT &kp C_BRI_UP &kp C_VOL_UP &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans   &trans
+       &trans    &trans   &kp C_PREV &kp C_BRI_DN &kp C_VOL_DN &trans    &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans   &trans
+       &trans    &trans   &kp C_PP   &trans       &kp C_MUTE   &kp BSPC  &kp BSPC  &mo RAISE &trans    &trans    &trans   &trans
                      >;
               };
 
               raise_layer {
 // -----------------------------------------------------------------------------------------
 // | GRAVE  |   1    |   2    |   3    |   4    |   5    |   6    |   7    |   8    |   9    |   0    |  DEL   |
-// | LOWER  | TOG_UG | SAT+   | HUE+   | BRI+   | SPD+   |   *    |   4    |   5    |   6    |   +    |        |
-// |        | EFF+   | SAT-   | HUE-   | BRI-   | SPD-   |   0    |   1    |   2    |   3    |   ^    |        |
+// | LOWER  |        |        |        |        |        |   *    |   4    |   5    |   6    |   +    |        |
+// |        |        |        |        |        |        |   0    |   1    |   2    |   3    |   ^    |        |
 // |        |        |        |        |        |  DEL   |  DEL   |  ---   |   0    |   .    |  DIV   |   =    |
                      bindings = <
-       &kp GRAVE     &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6    &kp N7  &kp N8 &kp N9  &kp N0    &kp DEL
-       &mo LOWER     &rgb_ug RGB_TOG &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_SPI &kp ASTRK &kp N4  &kp N5 &kp N6  &kp PLUS  &trans
-       &trans        &rgb_ug RGB_EFF &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &kp N0    &kp N1  &kp N2 &kp N3  &kp CARET &trans
-       &trans        &trans          &trans          &trans          &trans          &kp DEL         &kp DEL   &trans  &kp N0 &kp DOT &kp SLASH &kp EQUAL
+       &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp N6    &kp N7  &kp N8 &kp N9  &kp N0    &kp DEL
+       &mo LOWER &trans &trans &trans &trans &trans  &kp ASTRK &kp N4  &kp N5 &kp N6  &kp PLUS  &trans
+       &trans    &trans &trans &trans &trans &trans  &kp N0    &kp N1  &kp N2 &kp N3  &kp CARET &trans
+       &trans    &trans &trans &trans &trans &kp DEL &kp DEL   &trans  &kp N0 &kp DOT &kp SLASH &kp EQUAL
                      >;
               };
 
