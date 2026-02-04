@@ -5,7 +5,7 @@ include:
     shield: helix_left
   - board: nice_nano
     shield: helix_right
-  - board: preonic
-  - board: planck
+  - board: preonic_rev3
+  - board: planck_rev6
   - board: nice_nano
     shield: settings_reset
