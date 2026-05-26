@@ -1,15 +1,15 @@
 # This file generates the GitHub Actions matrix.
 ---
 include:
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: helix_left
-  - board: nice_nano@1//zmk
+  - board: nice_nano//zmk
     shield: helix_right
   - board: nice_nano//zmk
     shield: helix_4row_left
   - board: nice_nano//zmk
     shield: helix_4row_right
   - board: planck//zmk
-  - board: blank_slate
-  - board: nice_nano@1//zmk
+  - board: blank_slate//zmk
+  - board: nice_nano//zmk
     shield: settings_reset
