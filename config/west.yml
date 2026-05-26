@@ -13,6 +13,7 @@ manifest:
       import: app/west.yml
     - name: blank-slate-zmk-module
       remote: petejohanson
+      # core-zephyr-hwmv2-update is the only HWMv2/Zephyr 4.1 compatible branch
       revision: core-zephyr-hwmv2-update
   self:
     path: config

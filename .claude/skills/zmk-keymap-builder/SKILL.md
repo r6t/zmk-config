@@ -104,7 +104,7 @@ Identical on all boards. 50% has empty bonus row at top.
 
 ## 4. Adding a New Board
 
-1. **`build.yaml`** — append the target. All boards use `//zmk` suffix:
+1. **`build.yaml`** — append the target. All boards use `//zmk` suffix under ZMK Zephyr 4.1:
    - `nice_nano//zmk` for all nice!nano v2
    - `planck//zmk`, `blank_slate//zmk`
    - `blank_slate//zmk` requires the local board extension at `boards/lpgalaxy/blank_slate/`

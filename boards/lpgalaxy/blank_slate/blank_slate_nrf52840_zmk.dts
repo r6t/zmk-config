@@ -6,4 +6,4 @@
 
 /dts-v1/;
 
-#include <../boards/lpgalaxy/blank_slate/blank_slate.dts>
+#include <blank_slate.dts>
