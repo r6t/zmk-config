@@ -126,7 +126,10 @@ Identical functional layout on all boards. 50% boards have an empty bonus row at
 3. **`config/<name>.keymap`** — start from:
    - 50% split: copy `config/helix.keymap`
    - 40% split: copy `config/helix_4row.keymap`
-   - 40% one-piece: copy `config/planck.keymap`
+   - 40% one-piece wireless: copy `config/lpgalaxy_blank_slate.keymap`
+   - 40% one-piece USB-only: copy `config/planck.keymap`
 
-4. **Custom shield** (only if the upstream ZMK shield doesn't exist or the matrix differs):
+4. **External module boards** (e.g. `lpgalaxy_blank_slate`): add the module remote and project to `config/west.yml`. The board ID needs no `//zmk` suffix since it's not an upstream ZMK board.
+
+5. **Custom shield** (only if the upstream ZMK shield doesn't exist or the matrix differs):
    Create `boards/shields/<name>/` with `Kconfig.shield`, `<name>.dtsi`, and `<name>_left.overlay` / `<name>_right.overlay`. See `boards/shields/helix_4row/` as the reference implementation.
