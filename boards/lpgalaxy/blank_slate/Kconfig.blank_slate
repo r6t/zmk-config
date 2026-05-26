@@ -1,5 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config BOARD_BLANK_SLATE
-	select ZMK_BOARD_COMPAT if BOARD_BLANK_SLATE_NRF52840_ZMK

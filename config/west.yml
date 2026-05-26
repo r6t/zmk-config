@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -11,9 +9,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: blank-slate-zmk-module
-      remote: petejohanson
-      # core-zephyr-hwmv2-update is the only HWMv2/Zephyr 4.1 compatible branch
-      revision: core-zephyr-hwmv2-update
   self:
     path: config

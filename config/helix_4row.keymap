@@ -70,15 +70,15 @@
 
               raise_layer {
 // -------------------------------------------------------------------------------------------------------------------------------------------------
-// | GRAVE   |   1     |   2     |   3     |   4     |   5     |                                    |   6   |   7   |   8   |   9   |   0   |  DEL  |
 // | LOWER   |         |         |         |         |         |                                    |  DIV  |   7   |   8   |   9   |   -   |       |
 // |         |         |         |         |         |         |                                    |   *   |   4   |   5   |   6   |   +   |       |
+// |         |         |         |         |         |         |       |                    |       |   0   |   1   |   2   |   3   |   ^   |       |
 // |         |         |         |         |         |  DEL    |       |                    |       |  DEL  |  ---  |   0   |   .   |       |   =   |
                      bindings = <
-       &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                            &kp N6    &kp N7  &kp N8 &kp N9  &kp N0    &kp DEL
        &mo LOWER &trans &trans &trans &trans &trans                            &kp SLASH &kp N7  &kp N8 &kp N9  &kp MINUS &trans
        &trans    &trans &trans &trans &trans &trans                            &kp ASTRK &kp N4  &kp N5 &kp N6  &kp PLUS  &trans
-       &trans    &trans &trans &trans &trans &kp DEL     &trans       &trans    &kp DEL   &trans  &kp N0 &kp DOT &trans    &kp EQUAL
+       &trans    &trans &trans &trans &trans &trans     &trans       &trans    &kp N0    &kp N1  &kp N2 &kp N3  &kp CARET &trans
+       &trans    &trans &trans &trans &trans &kp DEL    &trans       &trans    &kp DEL   &trans  &kp N0 &kp DOT &trans    &kp EQUAL
                      >;
               };
 

@@ -1,5 +1,0 @@
-board:
-  extend: blank_slate
-  variants:
-    - name: zmk
-      qualifier: nrf52840
