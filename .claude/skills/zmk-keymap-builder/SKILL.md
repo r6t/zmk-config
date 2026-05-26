@@ -104,10 +104,10 @@ Identical on all boards. 50% has empty bonus row at top.
 
 ## 4. Adding a New Board
 
-1. **`build.yaml`** — append the target. ZMK Zephyr 4.1 board ID syntax:
-   - `nice_nano//zmk` for all nice!nano v2 (used exclusively in this repo)
-   - `planck//zmk` for planck
-   - `blank_slate` (no suffix — external module board, no `zmk` variant)
+1. **`build.yaml`** — append the target. All boards use `//zmk` suffix:
+   - `nice_nano//zmk` for all nice!nano v2
+   - `planck//zmk`, `blank_slate//zmk`
+   - `blank_slate//zmk` requires the local board extension at `boards/lpgalaxy/blank_slate/`
 
 2. **`config/<name>.conf`** — standard wireless template:
    ```properties

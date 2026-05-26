@@ -1,0 +1,9 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/dts-v1/;
+
+#include <../boards/lpgalaxy/blank_slate/blank_slate.dts>
