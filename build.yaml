@@ -10,6 +10,6 @@ include:
   - board: nice_nano//zmk
     shield: helix_4row_right
   - board: planck//zmk
-  - board: lpgalaxy_blank_slate
+  - board: blank_slate
   - board: nice_nano@1//zmk
     shield: settings_reset
