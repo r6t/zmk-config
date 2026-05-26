@@ -75,12 +75,12 @@
 // |  F1     |  F2     |  F3     |  F4     |  F5     |  F6     |  F7     |  F8     |  F9     |  F10    |  F11    |  F12    |
 // |  ---    |         |         |         |         |         |         |         |         |         |         |         |
 // | BT SEL0 | BT SEL1 | BT SEL2 | BT SEL3 | BT SEL4 | BT CLR  | BT DSC0 | BT DSC1 | BT DSC2 | BT DSC3 | BT DSC4 |         |
-// |         | O_BLE   | O_USB   |         |  ---    |         |         |  ---    |         |         |         |         |
+// |         | O_BLE   | O_USB   |         |  ---    |         |         |  ---    |         |         | FLASH   | RESET   |
                      bindings = <
        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
        &trans        &trans        &trans        &trans        &trans        &trans      &trans        &trans        &trans        &trans        &trans        &trans
        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &trans
-       &trans        &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans      &trans        &trans        &trans        &trans        &trans        &trans
+       &trans        &out OUT_BLE  &out OUT_USB  &trans        &trans        &trans      &trans        &trans        &trans        &trans        &bootloader   &sys_reset
                      >;
               };
        };

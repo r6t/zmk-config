@@ -119,7 +119,7 @@ Identical functional layout on all boards. 50% boards have an empty bonus row at
    CONFIG_USB_HID_POLL_INTERVAL_MS=1
    # Power management (no displays/RGB on these keyboards)
    CONFIG_ZMK_SLEEP=y
-   CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=14400000
+   CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=10800000
    CONFIG_ZMK_PM_SOFT_OFF=y
    ```
 
